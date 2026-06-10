@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# ── Arch Linux fresh install — dotfiles bootstrap ──────────────
+# ── Arch Linux — dotfiles bootstrap ────────────────────────────
 # Run from the dotfiles repo root (your $HOME after cloning)
 
 info()  { printf "\033[1;34m[INFO]\033[0m %s\n" "$*"; }
@@ -12,7 +12,6 @@ err()   { printf "\033[1;31m[ERR ]\033[0m %s\n" "$*" >&2; exit 1; }
 REPO_PKGS=(
     base base-devel linux linux-firmware
     amd-ucode
-    btrfs-progs efibootmgr grub os-prober
     sudo nano vim wget git github-cli go make cmake unzip
     networkmanager network-manager-applet iwd
     pipewire pipewire-alsa pipewire-jack pipewire-pulse wireplumber libpulse
@@ -33,13 +32,9 @@ REPO_PKGS=(
     ttf-dejavu ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-liberation
     btop
     ufw
-    smartmontools
     wiremix
     power-profiles-daemon
     imagemagick
-    zram-generator
-    gst-plugin-pipewire
-    libva-nvidia-driver nvidia-open
     spotify-launcher
     opencode
     fish
@@ -70,7 +65,6 @@ AUR_PKGS=(
     skwd-daemon-bin
     skwd-wall
     spicetify-cli
-    vesktop-bin
     bibata-cursor-theme-bin
 )
 
@@ -82,9 +76,6 @@ ok "AUR packages installed"
 info "Enabling services…"
 sudo systemctl enable --now NetworkManager
 sudo systemctl enable --now bluetooth
-sudo systemctl enable --now ufw
-sudo systemctl enable --now fstrim.timer
-sudo systemctl enable --now zram-generator
 sudo systemctl enable sddm
 ok "Services enabled"
 
@@ -123,7 +114,6 @@ printf "\n"
 ok "Bootstrap complete!"
 printf "\n"
 info "Next steps:"
-info "  1. Edit /etc/default/grub and run: sudo grub-mkconfig -o /boot/grub/grub.cfg"
-info "  2. Reboot"
-info "  3. After logging in, change wallpaper with skwd-wall and colors will auto-generate"
-info "  4. Or run: matugen-wall  (to regenerate colors manually)"
+info "  1. Reboot"
+info "  2. After logging in, change wallpaper with skwd-wall and colors will auto-generate"
+info "  3. Or run: matugen-wall  (to regenerate colors manually)"
