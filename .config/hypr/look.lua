@@ -1,3 +1,5 @@
+local c = require("colors")
+
 hl.config({
     general = {
         gaps_in          = 5,
@@ -8,8 +10,8 @@ hl.config({
         layout           = "dwindle",
 
         col = {
-            active_border   = "rgba(aaaaaacc)",
-            inactive_border = "rgba(55555588)",
+            active_border   = "rgba(" .. c.primary:sub(2) .. "cc)",
+            inactive_border = "rgba(" .. c.outline:sub(2) .. "88)",
         },
     },
 
@@ -23,7 +25,7 @@ hl.config({
             enabled      = true,
             range        = 4,
             render_power = 3,
-            color        = 0xee1a1a1a,
+            color        = 0xee000000 + tonumber(c.shadow:sub(2), 16),
         },
 
         blur = {

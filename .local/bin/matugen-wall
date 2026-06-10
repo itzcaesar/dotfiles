@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+WALL_NAME=$(skwd wall list 2>/dev/null | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['wallpapers'][0]['name'])" 2>/dev/null || true)
+
+if [[ -z "$WALL_NAME" ]]; then
+    echo "Error: Could not get current wallpaper from skwd" >&2
+    exit 1
+fi
+
+WALL_PATH=$(find /home/athylus/Pictures/Wallpapers -name "$WALL_NAME" -type f 2>/dev/null | head -1)
+
+if [[ -z "$WALL_PATH" ]]; then
+    echo "Error: Wallpaper file not found: $WALL_NAME" >&2
+    exit 1
+fi
+
+echo "Generating colors from: $WALL_PATH"
+matugen image --prefer darkness -c ~/.config/matugen/config.toml "$WALL_PATH"
+echo "Done! Colors applied to Hyprland and Rofi."

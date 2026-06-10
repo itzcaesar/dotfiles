@@ -36,7 +36,7 @@
     "apiKey": ""
   },
   "matugen": {
-    "schemeType": "scheme-monochrome",
+    "schemeType": "scheme-content",
     "mode": "dark"
   },
   "integrations": [
@@ -59,20 +59,9 @@
       "reload": "pkill -USR1 kitty"
     },
     {
-      "name": "vscode",
-      "template": "vscode-theme.json",
-      "output": "~/.vscode/extensions/matugen.matugen-theme-1.0.0/themes/matugen-color-theme.json"
-    },
-    {
       "name": "vesktop",
       "template": "vesktop.css",
       "output": "~/.config/vesktop/themes/kitty-match.css"
-    },
-    {
-      "name": "spicetify",
-      "template": "spicetify.ini",
-      "output": "~/.config/spicetify/Themes/Matugen/color.ini",
-      "reload": "~/.config/skwd-wall/scripts/reload-spicetify.sh"
     },
     {
       "name": "spicetify-css",
@@ -83,6 +72,17 @@
       "name": "yazi",
       "template": "yazi-theme.toml",
       "output": "~/.config/yazi/theme.toml"
+    },
+    {
+      "name": "hyprland",
+      "template": "hyprland-colors.lua",
+      "output": "~/.config/hypr/colors.lua",
+      "reload": "hyprctl reload"
+    },
+    {
+      "name": "rofi",
+      "template": "rofi-colors.rasi",
+      "output": "~/.config/rofi/colors.rasi"
     }
   ],
   "components": {

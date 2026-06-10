@@ -1,3 +1,5 @@
+@import "colors.rasi"
+
 configuration {
     modi: "drun";
     icon-theme: "MacTahoe-grey-dark";
@@ -10,51 +12,14 @@ configuration {
 
 * {
     font: "JetBrainsMono Nerd Font 12";
-    background: #111111;
-    background-color: #111111;
-    foreground: #aaaaaa;
-    text-color: #aaaaaa;
-    lightbg: #111111;
-    lightfg: #888888;
-    border-color: #333333;
-    separatorcolor: #333333;
     spacing: 4px;
-
-    red:        #666666;
-    blue:       #666666;
-    green:      #666666;
-    orange:     #666666;
-    yellow:     #666666;
-    purple:     #666666;
-    cyan:       #666666;
-    pink:       #666666;
-    teal:       #666666;
-
-    normal-background:           var(background);
-    normal-foreground:           var(foreground);
-    alternate-normal-background: var(lightbg);
-    alternate-normal-foreground: var(foreground);
-    urgent-background:           var(background);
-    urgent-foreground:           var(red);
-    alternate-urgent-background: var(lightbg);
-    alternate-urgent-foreground: var(red);
-    selected-urgent-background:  var(red);
-    selected-urgent-foreground:  var(background);
-    active-background:           var(background);
-    active-foreground:           var(foreground);
-    alternate-active-background: var(lightbg);
-    alternate-active-foreground: var(foreground);
-    selected-active-background:  var(lightfg);
-    selected-active-foreground:  var(foreground);
-    selected-normal-background:  var(lightfg);
-    selected-normal-foreground:  var(foreground);
 }
 
 window {
     width: 500px;
     border: 1;
-    border-color: #333333;
-    background-color: #111111;
+    border-color: var(border-color);
+    background-color: @background;
     padding: 0;
     location: center;
     anchor: center;
@@ -65,26 +30,26 @@ mainbox {
     children: [ inputbar, listview ];
     spacing: 0;
     padding: 4px;
-    background-color: #111111;
+    background-color: @background;
 }
 
 inputbar {
-    background-color: #111111;
+    background-color: @background;
     padding: 10px 12px;
     spacing: 8px;
     children: [ prompt, entry ];
-    text-color: #aaaaaa;
+    text-color: @foreground;
 }
 
 prompt {
-    text-color: #666666;
+    text-color: @lightfg;
     font: "JetBrainsMono Nerd Font 11";
 }
 
 entry {
-    text-color: #aaaaaa;
-    cursor-color: #aaaaaa;
-    placeholder-color: #666666;
+    text-color: @foreground;
+    cursor-color: @foreground;
+    placeholder-color: @lightfg;
     font: "JetBrainsMono Nerd Font 12";
     expand: true;
     horizontal-align: 0;
@@ -92,7 +57,7 @@ entry {
 }
 
 listview {
-    background-color: #111111;
+    background-color: @background;
     lines: 5;
     columns: 1;
     spacing: 0;
@@ -104,72 +69,72 @@ listview {
 
 element {
     background-color: transparent;
-    text-color: #aaaaaa;
+    text-color: @foreground;
     padding: 10px 12px;
     cursor: pointer;
     border: 0 0 1 0;
-    border-color: #222222;
+    border-color: @lightbg;
 
 }
 
 element normal.normal {
-    background-color: #111111;
-    text-color: #aaaaaa;
+    background-color: @background;
+    text-color: @foreground;
     padding: 10px 12px;
     cursor: pointer;
     border: 0 0 1 0;
-    border-color: #222222;
+    border-color: @lightbg;
 
 }
 
 element normal.alternate {
-    background-color: #141414;
-    text-color: #aaaaaa;
+    background-color: @lightbg;
+    text-color: @foreground;
     padding: 10px 12px;
     cursor: pointer;
     border: 0 0 1 0;
-    border-color: #222222;
+    border-color: @lightbg;
 
 }
 
 element normal.urgent {
-    background-color: #111111;
-    text-color: #666666;
+    background-color: @background;
+    text-color: @lightfg;
 }
 
 element normal.active {
-    background-color: #111111;
-    text-color: #aaaaaa;
+    background-color: @background;
+    text-color: @foreground;
 }
 
 element selected.normal {
-    background-color: #222222;
-    text-color: #aaaaaa;
+    background-color: @selected-bg;
+    text-color: @selected-fg;
     padding: 10px 12px;
     cursor: pointer;
     border: 0 0 1 0;
-    border-color: #333333;
+    border-color: @selected-bg;
 
 }
 
 element selected.alternate {
-    background-color: #222222;
-    text-color: #aaaaaa;
+    background-color: @selected-bg;
+    text-color: @selected-fg;
     padding: 10px 12px;
     cursor: pointer;
     border: 0 0 1 0;
-    border-color: #333333;
+    border-color: @selected-bg;
 
 }
 
 element selected.urgent {
-    background-color: #222222;
-    text-color: #aaaaaa;
+    background-color: @selected-bg;
+    text-color: @selected-fg;
 }
 
 element selected.active {
-    background-color: #222222;
-    text-color: #aaaaaa;
+    background-color: @selected-bg;
+    text-color: @selected-fg;
 }
 
 element-icon {
@@ -182,6 +147,6 @@ element-icon {
 element-text {
     vertical-align: 0.5;
     horizontal-align: 0;
-    text-color: #aaaaaa;
+    text-color: @foreground;
     font: "JetBrainsMono Nerd Font 12";
 }

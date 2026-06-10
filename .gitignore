@@ -12,3 +12,8 @@
 !.config/qt6ct
 !.config/skwd-wall
 !.config/matugen
+!/.local
+/.local/*
+!.local/bin
+!.local/bin/matugen-wall
+!/install.sh
