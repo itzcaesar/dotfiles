@@ -5,11 +5,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/OS-Arch_Linux-1793D1?logo=arch-linux&logoColor=white">
   <img src="https://img.shields.io/badge/WM-Hyprland-8A2BE2?logo=hyprland&logoColor=white">
-  <img src="https://img.shields.io/badge/Shell-bash-4EAA25?logo=gnu-bash&logoColor=white">
-  <br>
-  <img src="https://img.shields.io/badge/Terminal-Kitty-000000?logo=kitty&logoColor=white">
-  <img src="https://img.shields.io/badge/Editor-Neovim-57A143?logo=neovim&logoColor=white">
-  <img src="https://img.shields.io/badge/Launcher-Rofi-18181B">
+  <img src="https://img.shields.io/badge/Shell-fish-4EAA25?logo=gnu-bash&logoColor=white">
 </p>
 
 <p align="center">
