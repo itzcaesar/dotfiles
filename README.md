@@ -17,6 +17,14 @@
   generated from your wallpaper.</b>
 </p>
 
+## About the project
+
+:waving_hand: Welcome to my dotfiles! This is a fully dynamic Linux rice where every color is derived from your current wallpaper using Google's Material You color system. Change the wallpaper once and every app follows — borders, terminal, launcher, editor, file manager, and even Spotify.
+
+:fire: Built on **Arch Linux** + **Hyprland** with heavy automation via `skwd-wall` and `matugen`. No manual theme tweaking needed — just pick a wallpaper and everything adapts.
+
+:rocket: Designed to be minimal, consistent, and hands-off. Clone, install, and your entire desktop matches your wallpaper in seconds.
+
 ---
 
 <table>
