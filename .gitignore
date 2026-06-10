@@ -12,6 +12,7 @@
 !.config/qt6ct
 !.config/skwd-wall
 !.config/matugen
+!.config/yazi
 !/.local
 /.local/*
 !.local/bin
