@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <b>Minimal, dynamic rice with <a href="https://material-foundation.github.io/material-you/">Material You</a> colors<br>
+  <b>Minimal, dynamic rice with Material You colors<br>
   generated from your wallpaper.</b>
 </p>
 
@@ -29,7 +29,7 @@
 | Terminal | Kitty |
 | Launcher | Rofi |
 | File manager | Yazi + Dolphin |
-| Wallpaper | [skwd-wall](https://github.com/itzcaesar/skwd-wall) |
+| Wallpaper | skwd-wall |
 | Color gen | matugen |
 | Fetch | fastfetch |
 | GTK/QT | adw-gtk3 / qt6ct |
