@@ -59,11 +59,6 @@
       "reload": "pkill -USR1 kitty"
     },
     {
-      "name": "vesktop",
-      "template": "vesktop.css",
-      "output": "~/.config/vesktop/themes/kitty-match.css"
-    },
-    {
       "name": "spicetify-css",
       "template": "spicetify.css",
       "output": "~/.config/spicetify/Themes/Matugen/user.css"
@@ -83,6 +78,12 @@
       "name": "rofi",
       "template": "rofi-colors.rasi",
       "output": "~/.config/rofi/colors.rasi"
+    },
+    {
+      "_comment": "Material You colors for Neovim (NvChad base46)",
+      "name": "neovim",
+      "template": "nvim-theme.lua",
+      "output": "~/.config/nvim/lua/themes/matugen.lua"
     }
   ],
   "components": {

@@ -1,10 +1,12 @@
 local terminal = "kitty"
 local menu     = "rofi -show drun"
+local file     = "kitty yazi"
 local mainMod  = "SUPER"
 
 -- User-specified binds
 hl.bind(mainMod .. " + Return",         hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + Space",          hl.dsp.exec_cmd(menu))
+hl.bind(mainMod .. " + E",               hl.dsp.exec_cmd(file))
 hl.bind(mainMod .. " + Q",              hl.dsp.window.close())
 hl.bind(mainMod .. " + SHIFT + left",   hl.dsp.window.move({ direction = "left" }))
 hl.bind(mainMod .. " + SHIFT + right",  hl.dsp.window.move({ direction = "right" }))

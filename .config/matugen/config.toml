@@ -10,3 +10,7 @@ post_hook = "hyprctl reload"
 [templates.rofi]
 input_path = "~/.config/matugen/templates/rofi-colors.rasi"
 output_path = "~/.config/rofi/colors.rasi"
+
+[templates.neovim]
+input_path = "~/.config/skwd-wall/data/matugen/templates/nvim-theme.lua"
+output_path = "~/.config/nvim/lua/themes/matugen.lua"

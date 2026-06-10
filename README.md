@@ -11,11 +11,9 @@ Minimal, dynamic rice with Material You colors generated from your wallpaper.
 | Terminal | Kitty |
 | Launcher | Rofi |
 | File manager | Yazi + Dolphin |
-| Bar/Sidebar | skwd-shell |
 | Wallpaper | skwd-wall |
 | Color gen | matugen |
 | Fetch | fastfetch |
-| Notifications | Dunst |
 | GTK/QT | adw-gtk3 / qt6ct |
 | Spotify theme | Spicetify |
 
