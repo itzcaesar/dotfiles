@@ -55,4 +55,13 @@ M.base_16 = {
   base0F = "{{colors.error.default.hex}}",
 }
 
+M.polish_hl = {
+  syntax = {},
+  treesitter = {},
+}
+
+M.type = "dark"
+
+M = require("base46").override_theme(M, "matugen")
+
 return M

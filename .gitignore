@@ -13,6 +13,7 @@
 !.config/skwd-wall
 !.config/matugen
 !.config/yazi
+!.config/nvim
 !/.local
 /.local/*
 !.local/bin
