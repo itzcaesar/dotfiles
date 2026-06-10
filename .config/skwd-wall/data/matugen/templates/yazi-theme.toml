@@ -24,7 +24,7 @@ progress_normal = { fg = "{{colors.primary.default.hex}}", bg = "reset" }
 progress_error  = { fg = "{{colors.error.default.hex}}", bg = "reset" }
 
 [mgr]
-cwd = { fg = "{{colors.primary.default.hex}}", bold = true }
+cwd = { fg = "{{colors.tertiary.default.hex}}", bold = true }
 
 find_keyword  = { fg = "{{colors.tertiary.default.hex}}", bold = true, italic = true, underline = true }
 find_position = { fg = "{{colors.secondary.default.hex}}", bg = "reset", bold = true, italic = true }
@@ -107,6 +107,6 @@ rules = [
     { mime = "{audio,video}/*", fg = "{{colors.tertiary.default.hex}}" },
     { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "{{colors.error.default.hex}}" },
     { mime = "application/{pdf,doc,rtf}", fg = "{{colors.primary.default.hex}}" },
-    { url = "*/", fg = "{{colors.primary.default.hex}}", bold = true },
+    { url = "*/", fg = "{{colors.tertiary.default.hex}}", bold = true },
     { url = "*", fg = "{{colors.on_surface.default.hex}}" },
 ]

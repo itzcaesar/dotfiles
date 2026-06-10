@@ -24,7 +24,7 @@ progress_normal = { fg = "#a2d399", bg = "reset" }
 progress_error  = { fg = "#ffb4ab", bg = "reset" }
 
 [mgr]
-cwd = { fg = "#a2d399", bold = true }
+cwd = { fg = "#a0cfd4", bold = true }
 
 find_keyword  = { fg = "#a0cfd4", bold = true, italic = true, underline = true }
 find_position = { fg = "#baccb3", bg = "reset", bold = true, italic = true }
@@ -107,6 +107,6 @@ rules = [
     { mime = "{audio,video}/*", fg = "#a0cfd4" },
     { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#ffb4ab" },
     { mime = "application/{pdf,doc,rtf}", fg = "#a2d399" },
-    { url = "*/", fg = "#a2d399", bold = true },
+    { url = "*/", fg = "#a0cfd4", bold = true },
     { url = "*", fg = "#e0e4da" },
 ]
