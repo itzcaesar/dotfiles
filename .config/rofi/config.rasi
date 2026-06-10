@@ -73,7 +73,7 @@ element {
     padding: 10px 12px;
     cursor: pointer;
     border: 0 0 1 0;
-    border-color: @lightbg;
+    border-color: @border-color;
 
 }
 
@@ -83,7 +83,7 @@ element normal.normal {
     padding: 10px 12px;
     cursor: pointer;
     border: 0 0 1 0;
-    border-color: @lightbg;
+    border-color: @border-color;
 
 }
 
@@ -93,17 +93,17 @@ element normal.alternate {
     padding: 10px 12px;
     cursor: pointer;
     border: 0 0 1 0;
-    border-color: @lightbg;
+    border-color: @border-color;
 
 }
 
 element normal.urgent {
-    background-color: @background;
-    text-color: @lightfg;
+    background-color: @urgent-bg;
+    text-color: @urgent-fg;
 }
 
 element normal.active {
-    background-color: @background;
+    background-color: @lightbg;
     text-color: @foreground;
 }
 
@@ -113,7 +113,7 @@ element selected.normal {
     padding: 10px 12px;
     cursor: pointer;
     border: 0 0 1 0;
-    border-color: @selected-bg;
+    border-color: @border-color;
 
 }
 
@@ -123,13 +123,13 @@ element selected.alternate {
     padding: 10px 12px;
     cursor: pointer;
     border: 0 0 1 0;
-    border-color: @selected-bg;
+    border-color: @border-color;
 
 }
 
 element selected.urgent {
-    background-color: @selected-bg;
-    text-color: @selected-fg;
+    background-color: @urgent-bg;
+    text-color: @urgent-fg;
 }
 
 element selected.active {
