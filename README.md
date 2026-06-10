@@ -1,5 +1,4 @@
 <p align="center">
-  <img src="https://archlinux.org/static/logos/arch-linux-logo-600-271cdfae893e113a8b98e942e7ce6848.png" width="64"><br>
   <b>dotfiles — Arch + Hyprland</b>
 </p>
 
