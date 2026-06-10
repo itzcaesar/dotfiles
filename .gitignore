@@ -1,0 +1,14 @@
+/*
+!/.gitignore
+!/.config
+/.config/*
+!.config/hypr
+!.config/kitty
+!.config/rofi
+!.config/fastfetch
+!.config/gtk-3.0
+!.config/gtk-4.0
+!.config/qt5ct
+!.config/qt6ct
+!.config/skwd-wall
+!.config/matugen
