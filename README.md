@@ -24,10 +24,9 @@ Colors are generated from your wallpaper using **matugen** (Material You). [skwd
 - **Hyprland** — borders, shadow
 - **Kitty** — terminal colors
 - **Rofi** — background, foreground, selection
+- **Neovim** — NvChad base46 theme (auto-reloads on change)
 - **Spicetify** — Spotify theme
 - **Yazi** — file manager theme
-- **Vesktop** — Discord theme
-- **skwd-shell** — bar and sidebar widgets
 
 ## Install (fresh Arch)
 
