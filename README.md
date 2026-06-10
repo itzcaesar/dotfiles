@@ -98,6 +98,3 @@ skwd-wall runs this automatically on every wallpaper change.
 └── matugen/       # Manual matugen config & templates
 ```
 
-## License
-
-MIT
