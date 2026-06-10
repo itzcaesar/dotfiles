@@ -20,7 +20,11 @@
 
 ---
 
-## Stack
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Stack
 
 | Component | Choice |
 |-----------|--------|
@@ -35,18 +39,25 @@
 | GTK/QT | adw-gtk3 / qt6ct |
 | Spotify | Spicetify |
 
-## Dynamic theming
+</td>
+<td width="50%" valign="top">
 
-Every wallpaper change triggers color regeneration for all visible surfaces:
+### Dynamic theming
+
+Color regeneration on wallpaper change:
 
 | App | What changes |
 |-----|-------------|
-| **Hyprland** | Window borders, shadows |
-| **Kitty** | Terminal 16-color palette |
-| **Rofi** | Background, foreground, selection states |
-| **Neovim** | NvChad base46 theme (auto-reloads) |
+| **Hyprland** | Borders, shadows |
+| **Kitty** | 16-color palette |
+| **Rofi** | BG, FG, selection |
+| **Neovim** | Base46 theme (auto) |
 | **Spicetify** | Spotify theme |
-| **Yazi** | File manager selection, hover, directory icons |
+| **Yazi** | Selection, dir icons |
+
+</td>
+</tr>
+</table>
 
 ## Getting started
 
