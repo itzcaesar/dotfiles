@@ -46,20 +46,3 @@ matugen-wall
 ```
 
 Or via skwd-wall's Matugen settings (EXTERNAL MATUGEN → Command) which runs automatically on wallpaper change.
-
-## fastfetch
-
-```
-                  
-                  athylus@arch
-      /\           OS  Arch Linux x86_64
-     /  \         󰌢 Host  83JC (LOQ 15ARP9)
-    /    \         Kernel  Linux 7.0.11-arch1-1
-   /      \        Uptime  26 mins
-  /   ,,   \      󰏖 Packages  714 (pacman)
- /   |  |   \      Shell  bash 5.3.12
-/_-''    ''-_\     WM  Hyprland 0.55.3 (Wayland)
-                   Terminal  opencode
-                  
-                  
-```
